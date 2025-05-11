@@ -2,42 +2,38 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: app-1
+  name: app-one
   labels:
-    app: app-1
+    app: app-one
 spec:
   ports:
     - port: 80
       targetPort: 8080
   selector:
     app: app-one
-  type: NodePort
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: app-2
+  name: app-two
   labels:
-    app: app-2
+    app: app-two
 spec:
   ports:
     - port: 80
       targetPort: 8080
   selector:
     app: app-two
-  type: NodePort
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: app-3
+  name: app-three
   labels:
-    app: app-3
+    app: app-three
 spec:
   ports:
     - port: 80
       targetPort: 8080
   selector:
     app: app-three
-  type: NodePort
----

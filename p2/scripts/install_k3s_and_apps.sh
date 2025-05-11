@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Install K3s
-curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--write-kubeconfig-mode 644" sh -
+curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--node-ip=192.168.56.110 --write-kubeconfig-mode 644" sh -
+
 
 export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 
